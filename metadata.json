@@ -1,0 +1,6 @@
+{
+  "name": "CityLib Welcome Hub",
+  "description": "An elegant, comprehensive welcome hub for CityLib, featuring catalog search, room bookings, interactive events calendar, maps, and membership dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

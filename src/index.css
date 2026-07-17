@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Tenor+Sans&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Tenor Sans", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Classic Navy Trust Palette & Premium Neutrals based on Deep Navy #1e3e62 */
+  --color-brand-900: #1e3e62; /* Main Brand Deep Navy Banner */
+  --color-brand-800: #2b4e75; /* Lighter interactive navy hover */
+  --color-brand-700: #3a628f; /* Light slate blue */
+  --color-brand-600: #132b45; /* Ultra deep shadow navy */
+  --color-brand-505: #1e3e62;
+  --color-brand-500: #1e3e62; /* Brand Deep Navy */
+  --color-brand-50: #f0f4f8;  /* Ice blue */
+  
+  /* Overrides for standard blue and indigo classes to map to Navy Trust */
+  --color-blue-50: #f0f4f8;
+  --color-blue-100: #dce4ed;
+  --color-blue-200: #b9cadc;
+  --color-blue-300: #93adca;
+  --color-blue-400: #6a8bb4;
+  --color-blue-500: #3a628f;
+  --color-blue-600: #1e3e62; /* Map standard blue-600 directly to brand navy */
+  --color-blue-700: #152d47; /* map blue-700 to darker shade */
+  --color-blue-800: #0f2034;
+  --color-blue-900: #08111c;
+  --color-blue-950: #04080e;
+
+  --color-indigo-50: #f0f4f8;
+  --color-indigo-100: #dce4ed;
+  --color-indigo-200: #b9cadc;
+  --color-indigo-500: #3a628f;
+  --color-indigo-600: #1e3e62; /* Map standard indigo-600 directly to brand navy */
+  --color-indigo-700: #152d47;
+  --color-indigo-800: #0f2034;
+  --color-indigo-900: #08111c;
+  --color-indigo-950: #04080e;
+  
+  --color-accent-600: #1e3e62; /* Accent is solid brand deep navy */
+  --color-accent-500: #2b4e75;
+  --color-accent-400: #93adca;
+  --color-accent-50: #f0f4f8;
+  
+  --animate-ripple: ripple 1.2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+/* Custom visual scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f8fafc; /* light slate background */
+  color: #0f172a; /* deep slate-900 */
+}
+
